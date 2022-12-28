@@ -1,0 +1,277 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    max-width: 100vw;
+    max-height: 100vh;
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #cfcfcf;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+nav ul li{
+    padding-left: 40px;
+    list-style: none;
+}
+
+button{
+    border-radius: 20px;
+    padding: 5px 10px;
+    outline: none;
+    user-select: none;
+    background-color: aqua;
+}
+
+.first{
+   display: flex;
+   align-items: center;
+    background-color: #fefefe;
+    position: relative;
+    min-width: 100vw;
+    min-height: 80vh;
+    z-index: -1;
+}
+
+.content{
+    max-width: 50%;
+}
+
+.content h1{
+    font-size: 3rem;
+    padding-left: 8rem;
+    padding-right: 5rem;
+}
+
+.content p{
+    padding-top: 2rem;
+    padding-left: 8rem;
+    padding-right: 3rem;
+    line-height: 1.5rem;
+    max-width: 30rem;
+}
+
+.content button{
+    margin-top: 2rem;
+    margin-left: 9rem;
+}
+
+.first .image{
+    background: url(images/bg-intro-desktop.svg) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    right: 0%;
+    top: -10%;
+    
+}
+
+.image img{
+    max-width: 1000rem;
+    max-height: 700px;
+    
+}
+
+.second{
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 9rem;
+    background-color: #aaa;
+    position: relative;
+    z-index: -2;
+}
+
+.second .second-content{
+    max-width: 30rem;
+    line-height: 1.5rem;
+}
+.second-content p{
+    padding-top: 1.5rem;
+}
+
+.second .iconsandcontent{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5rem;
+}
+
+.second h3{
+    padding: 1.5rem 0;
+}
+
+.second p{
+    padding-bottom: 3rem;
+}
+
+.latest{
+    padding-top: 3rem;
+    padding-left: 9rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardwithimages{
+    display: flex;
+    justify-content: center;
+}
+
+.card1,.card2,.card3,.card4{
+    margin-left: 2rem;
+}
+
+.card1{
+    margin-left: 0rem;
+}
+
+.card1 img{
+    max-height: 200px;
+}
+
+.latest img{
+    max-width: 250px;
+    max-height: 300px;
+    margin-top: 2rem;
+}
+
+.latest p{
+    line-height: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.latest h5{
+    padding-top: 2rem;
+    opacity: .5;
+}
+
+.latest h4{
+    padding: 1rem 0;
+}
+
+.latest h4:hover{
+    color: rebeccapurple;
+}
+
+.footer{
+    background-color: #aaa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+    line-height: 1.5rem;
+    color: #fff;
+}
+
+.footer .icons{
+    padding-top: 2rem;
+}
+
+.footer img:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.menu, .mobileLinks{
+    display: none;
+}
+
+.btn-copyright p{
+    padding-top: 2rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+@media (max-width:600px) {
+    nav{
+        justify-content: space-between;
+    }
+
+    .mobileLinks{
+        position: absolute;
+        top: -100vh;
+        min-width: 100vw;
+        min-height: 80vh;
+        display: flex;
+        background-color: black;
+        color: #fff;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .close-icon{
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+    }
+
+    .close-icon img{
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+
+    .mobileLinks li{
+        padding-top: 3rem;
+        list-style: none;
+        font-size: 1.5rem;
+    }
+
+    .first .content{
+        position: relative;
+        top: 45rem;
+        max-width: 30rem;
+    }
+
+    .second{
+        margin-top: 50rem;
+    }
+
+    .iconsandcontent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 40rem;
+        margin-right: 5rem;
+    }
+
+    .cardwithimages{
+        flex-direction: column;
+        margin-right: 5rem;
+    }
+
+    .link , .req-invite{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        padding-right: 2rem;
+        cursor: pointer;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
